@@ -1,51 +1,101 @@
-<!-- update test -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Luthz Gastrobar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fafafa; color: #333; }
-    header { text-align: center; padding: 50px 20px; }
-    header h1 { font-size: 3em; margin-bottom: 10px; font-style: italic; }
-    header p { font-size: 1.2em; color: #666; }
-    section { padding: 40px 20px; max-width: 800px; margin: auto; }
-    h2 { border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 20px; }
-    footer { text-align: center; padding: 20px; font-size: 0.9em; color: #999; background: #f5f5f5; }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #fafafa;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #ece9e6, #ffffff);
+    }
+    header img {
+      max-width: 120px;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 10px 0;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #666;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #444;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f1f1f1;
+      color: #555;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
   <header>
-    <img src="luthz-logo.png" alt="Luthz Logo" width="160">
+    <img src="luthz-logo.png" alt="Luthz Logo">
     <h1>Luthz Gastrobar</h1>
     <p>Where gastronomy meets technology.</p>
   </header>
 
   <section>
     <h2>About Us</h2>
-    <p><strong>Luthz</strong> is a modern gastrobar in Kaunas that blends fine dining, social atmosphere, and cutting-edge AI solutions.
-    Our mission is to create an elegant yet innovative space for young professionals and students.</p>
+    <p><strong>Luthz</strong> is a modern gastrobar in Kaunas that blends fine dining, social atmosphere, and cutting-edge AI solutions. Our mission is to create an elegant yet innovative space for young professionals and students.</p>
   </section>
 
   <section>
     <h2>Our Smart Features</h2>
-    <ul>
-      <li><strong>Personalized Menu:</strong> AI-powered recommendations for dishes & drinks based on taste profiles and order history.</li>
-      <li><strong>Smart Stock:</strong> Demand forecasting to optimize purchasing and cut food waste.</li>
-      <li><strong>AI-Driven Promos:</strong> Suggests the best time/windows for happy hour and targeted offers.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <p>Email: info@luthz.com</p>
-    <p>Location: Kaunas, Lithuania</p>
+    <div class="features">
+      <div class="card">
+        <h3>Personalized Menu</h3>
+        <p>AI-powered recommendations for dishes & drinks based on taste profiles and order history.</p>
+      </div>
+      <div class="card">
+        <h3>Smart Stock</h3>
+        <p>Demand forecasting to optimize purchasing and cut food waste.</p>
+      </div>
+      <div class="card">
+        <h3>AI-Driven Promos</h3>
+        <p>Suggests the best time/windows for happy hour and targeted offers.</p>
+      </div>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Luthz Gastrobar</p>
+    <p>© 2025 Luthz Gastrobar | Kaunas, Lithuania</p>
   </footer>
 </body>
 </html>
